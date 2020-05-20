@@ -12,6 +12,8 @@
     background-color: #D1C4E9;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
+    font-size: medium;
+    height: auto;
 }
 .jumbotron{
     padding: 70px 30px 70px 30px;
@@ -23,4 +25,7 @@
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
+}
+.style{
+    width:76%;
 }
