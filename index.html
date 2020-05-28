@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a class="btn" id="buttonlogin" data-toggle="modal" role="button" type="button">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>
         </div>
@@ -84,7 +84,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-block btn-sm" data-target="#reserveform" data-toggle="modal" role="button">Reserve a Table</a>
+                    <a class="btn btn-warning btn-block btn-sm" id="buttonreservation" data-toggle="modal" role="button">Reserve a Table</a>
                 </div>
             </div>
         </div>
@@ -322,6 +322,14 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+
+            $("#buttonlogin").click(function(){
+                $('#loginModal').modal('show');
+            });
+
+            $('#buttonreservation').click(function(){
+                $('#reserveform').modal('show');
             });
         });
     </script>
